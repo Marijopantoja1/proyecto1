@@ -1,0 +1,228 @@
+/* En este archivo escriban su CSS */
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+/** IMportante para que el todo el contenido dentro sea responsive  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Lato:wght@400;700&display=swap'); /* Fonts */ /* Importar aquí la font */
+
+* { /* Reset */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: 'Alegreya', serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    padding-top: 90px;
+    background-color: #fbfbfb;
+}
+
+header{
+    display: inline-flex;
+    margin:0;
+    padding: 0;
+    height: 90px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed; 
+    background-color: #fbfbfb;
+    box-shadow: 10px 4px 2px 2px  rgba(208, 204, 207, 0.3);
+}
+
+.img-logo{
+    display: inline-flex;
+}
+
+.div-img-logo{
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+}
+
+.nav{
+    display: inline-flex;
+    margin-inline-start: auto;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+}
+
+.menu{
+    display: flex ;
+
+}
+
+.menu ul{
+    display: -webkit-inline-flex;
+    padding: 5px;
+}
+
+.menu ul li{
+    margin-right: 15px;
+    margin-top: 14px;
+}
+
+main {/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y *  el margin: auto; para tenerlo centrado fácilmente ;)*/
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+a { /* Para que los enlaces hereden el color de texto y no tengan subrayado */
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {/* Para quitar los puntos a los items de listas */
+    list-style: none;
+}
+
+#inicio, #hablemos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    padding-top: 90px;
+    min-height: 100vh;
+}
+
+.div-inicio{
+    display: flex;
+    justify-content: center;
+}
+
+.foto{
+    border-radius: 100%;
+    height: auto;
+    width: 300px;
+    margin: 0%;
+    padding: 0%;
+    max-width: 100%;
+    margin-top: 30px;
+
+
+}
+
+h1{
+    font-size: 36px;
+    padding-top: 30px;
+    text-align: center;
+    line-height: 1.2em;
+
+}
+
+.a-inicio{
+    text-align: center;
+    padding: 15px;
+    border: 0;
+}
+
+.boton{
+    background-color:#af599e;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    color:#fbfbfb;
+}
+
+#hablemos{
+    text-align: center;
+}
+
+.a-hablemos{
+    text-align: center;
+    padding: 15px;
+    border: 0;
+    background-color: rgba(175, 89, 158, 0.3);
+}
+
+h2{
+    font-size: 28px;
+    padding: 30px;
+    text-align: center;
+}
+
+.iconos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.iconos ol{
+
+    display: -webkit-inline-flex;
+    padding: 30px;
+}
+
+.iconos ol li{
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.social-icons{
+    font-size: 80px;
+    margin: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+footer{
+    background-color: #af599e;
+    height: 90px;
+}
+
+h4{
+    padding-top: 30px;
+    text-align: center;
+    line-height: 1.2em;
+
+}
+
+@media (min-width: 600px) {
+    #inicio, #hablemos{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .social-icons{
+        font-size: 60px;
+    }
+}
