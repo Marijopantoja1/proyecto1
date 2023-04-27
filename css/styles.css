@@ -197,7 +197,7 @@ h2{
 }
 
 .social-icons{
-    font-size: 80px;
+    font-size: 60px;
     margin: 20px 10px;
     justify-content: center;
     align-items: center;
@@ -213,6 +213,8 @@ h4{
     padding-top: 30px;
     text-align: center;
     line-height: 1.2em;
+    color:#fbfbfb;
+
 
 }
 
@@ -223,6 +225,6 @@ h4{
     }
 
     .social-icons{
-        font-size: 60px;
+        font-size: 80px;
     }
 }
